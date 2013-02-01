@@ -1,6 +1,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="480px"
+    android:layout_height="800px"
     tools:context=".Rabbit_MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/main" />
+
+    <Button
+        android:id="@+id/btn_diary"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="49dp"
+        android:background="#00FFFFFF"
+        android:text="Diary" />
+
+    <Button
+        android:id="@+id/btn_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_diary"
+        android:layout_alignBottom="@+id/btn_diary"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:text="Memo" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_memo"
+        android:layout_alignBottom="@+id/btn_memo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:background="#00FFFFFF"
+        android:text="Set Up" />
+
 </RelativeLayout>
